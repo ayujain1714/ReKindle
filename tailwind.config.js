@@ -7,11 +7,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#6F4E37",
-        secondary: "#A67B5B",
-        tertiary: "#ECB176",
-        light: "#FED8B1",
-        dark: "#503C3C",
+        cdark: "#00404D",
+        cpri: "#2C6975",
+        csec: "#68B2A0",
+        cter: "#CDE0C9",
+        clight: "#E0ECDE",
+        wlight: "#FFDBAC",
+        wter: "#F1C27D",
+        wsec: "#E0AC69",
+        wpri: "#C68642",
+        wdark: "#8D5524",
       },
       fontFamily: {
         grotesk: "Space Grotesk",
@@ -21,5 +26,6 @@ export default {
       },
     },
   },
-  plugins: ["prettier-plugin-tailwindcss"],
+
+  "plugins": ["prettier-plugin-tailwindcss"],
 };

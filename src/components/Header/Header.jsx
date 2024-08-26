@@ -1,42 +1,46 @@
-import {Link, NavLink} from 'react-router-dom'
-import Logo from '../../assets/Logo.svg'
+import { Link, NavLink } from "react-router-dom";
+import GOG from "../../assets/Government_Of_Gujarat_Seal.svg";
+import Line from "../../assets/Line.svg";
 
 export default function Header() {
   return (
-    <header className="shadow sticky z-50 top-0">
-      <nav className="bg-primary border-gray-200 px-4 lg:px-6 py-2.5">
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <Link to="/" className="flex items-center">
-            <img
-              src={Logo}
-              className="mr-3 h-10"
-              alt="Logo"
-            />
+    <header className="sticky top-0 z-50 shadow">
+      <nav className="border-gray-200 bg-csec px-4 py-2.5 lg:px-6">
+        <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
+          <Link
+            to="/"
+            className="flex items-center justify-evenly font-poppins text-xl font-black"
+          >
+            <div className="flex items-center justify-evenly gap-2">
+              <img src={GOG} className="h-10" alt="Logo" />
+              <img src={Line} className="h-12 w-0.5" alt="Line" />
+              <p>Govt. of Gujarat</p>
+            </div>
           </Link>
-          <div className="flex items-center lg:order-2 text-md font-grotesk font-black">
+          <div className="flex items-center font-grotesk font-black lg:order-2">
             <Link
               to="#"
-              className="text-light hover:bg-orange-700 focus:ring-4 focus:ring-cyan-300 rounded-lg px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none "
+              className="mr-2 rounded-lg px-2 py-2 text-clight hover:bg-cpri focus:outline-none focus:ring-2 focus:ring-cyan-900"
             >
-              Log in
+              Sign In
             </Link>
             <Link
               to="#"
-              className="text-light bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 rounded-lg px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+              className="mr-2 rounded-lg bg-cpri px-2 py-2 text-clight hover:bg-cdark focus:outline-none focus:ring-2 focus:ring-cyan-900"
             >
               Sign Up
             </Link>
           </div>
           <div
-            className="hidden justify-between items-center w-full lg:flex text-xl font-grotesk font-black lg:w-auto lg:order-1"
+            className="hidden w-full items-center justify-between font-grotesk text-xl font-black lg:order-1 lg:flex lg:w-auto"
             id="mobile-menu-2"
           >
-            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+            <ul className="mt-4 flex flex-col font-black lg:mt-0 lg:flex-row lg:space-x-8">
               <li>
                 <NavLink
-                to="/"
-                  className={({isActive}) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-tertiary" : "text-light"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-secondary lg:p-0`
+                  to="/"
+                  className={({ isActive }) =>
+                    `block py-2 pl-3 pr-4 duration-200 ${isActive ? "text-cdark" : "text-clight"} border-b border-gray-100 hover:bg-gray-50 hover:text-cpri lg:border-0 lg:p-0 lg:hover:bg-transparent`
                   }
                 >
                   About
@@ -44,9 +48,9 @@ export default function Header() {
               </li>
               <li>
                 <NavLink
-                to="/events"
-                  className={({isActive}) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-tertiary" : "text-light"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-secondary lg:p-0`
+                  to="/events"
+                  className={({ isActive }) =>
+                    `block py-2 pl-3 pr-4 duration-200 ${isActive ? "text-cdark" : "text-clight"} border-b border-gray-100 hover:bg-gray-50 hover:text-cpri lg:border-0 lg:p-0 lg:hover:bg-transparent`
                   }
                 >
                   Events
@@ -54,9 +58,9 @@ export default function Header() {
               </li>
               <li>
                 <NavLink
-                to="/donate"
-                  className={({isActive}) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-tertiary" : "text-light"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-secondary lg:p-0`
+                  to="/donate"
+                  className={({ isActive }) =>
+                    `block py-2 pl-3 pr-4 duration-200 ${isActive ? "text-cdark" : "text-clight"} border-b border-gray-100 hover:bg-gray-50 hover:text-cpri lg:border-0 lg:p-0 lg:hover:bg-transparent`
                   }
                 >
                   Donate
@@ -64,9 +68,9 @@ export default function Header() {
               </li>
               <li>
                 <NavLink
-                to="/alumdir"
-                  className={({isActive}) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-tertiary" : "text-light"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-secondary lg:p-0`
+                  to="/alumdir"
+                  className={({ isActive }) =>
+                    `block py-2 pl-3 pr-4 duration-200 ${isActive ? "text-cdark" : "text-clight"} border-b border-gray-100 hover:bg-gray-50 hover:text-cpri lg:border-0 lg:p-0 lg:hover:bg-transparent`
                   }
                 >
                   Alumini
@@ -74,9 +78,9 @@ export default function Header() {
               </li>
               <li>
                 <NavLink
-                to="/jobportal"
-                  className={({isActive}) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-tertiary" : "text-light"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-secondary lg:p-0`
+                  to="/jobportal"
+                  className={({ isActive }) =>
+                    `block py-2 pl-3 pr-4 duration-200 ${isActive ? "text-cdark" : "text-clight"} border-b border-gray-100 hover:bg-gray-50 hover:text-cpri lg:border-0 lg:p-0 lg:hover:bg-transparent`
                   }
                 >
                   Job Portal
