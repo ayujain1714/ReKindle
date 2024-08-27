@@ -26,14 +26,14 @@ export default function Header() {
             </Link>
           </div>
           <div className="flex items-center justify-between font-grotesk text-xl font-black max-md:text-sm lg:order-1">
-            <ul className="mt-0 flex flex-row font-black space-x-1 lg:space-x-3">
+            <ul className="mt-0 flex flex-row space-x-1 font-black lg:space-x-3">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
                   `rounded-3xl py-1 duration-200 ${isActive ? "bg-clight text-cdark" : "text-clight"} border-0 px-3 hover:text-cpri max-md:rounded-2xl max-md:px-2`
                 }
               >
-                About
+                Home
               </NavLink>
               <NavLink
                 to="/events"
