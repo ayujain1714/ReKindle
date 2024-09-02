@@ -1,26 +1,25 @@
 import { Link, NavLink } from "react-router-dom";
-import GOG from "../../assets/Government_Of_Gujarat_Seal.svg";
-import Line from "../../assets/Line.svg";
+import AluminiRelations from "../../assets/Alumini_Relations.svg";
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 shadow max-md:w-[450px]">
-      <nav className="border-gray-200 bg-csec px-2 py-1">
+      <nav className="border-gray-200 bg-wsec px-2 py-2 max-md:py-1">
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
           <Link
             to="/"
-            className="flex items-center justify-evenly font-grotesk text-xl font-black"
+            className="flex items-center justify-evenly gap-2 font-grotesk text-xl font-black"
           >
-            <div className="flex items-center justify-evenly gap-2">
-              <img src={GOG} className="h-10" alt="Logo" />
-              <img src={Line} className="h-10 w-0.5 max-md:hidden" alt="Line" />
-              <p className="max-md:hidden">Govt. of Gujarat</p>
-            </div>
+            <img
+              src={AluminiRelations}
+              className="h-10 max-md:hidden"
+              alt="Logo"
+            />
           </Link>
           <div className="order-2 flex items-center font-grotesk font-black">
             <Link
               to="#"
-              className="rounded-lg bg-cpri px-3 py-1 text-xl text-clight hover:bg-cdark focus:outline-none focus:ring-2 focus:ring-cyan-900 max-md:px-2 max-md:text-sm"
+              className="rounded-lg bg-wpri px-3 py-1 text-xl text-wlight hover:bg-wdark focus:outline-none focus:ring-2 focus:ring-amber-900 max-md:px-2 max-md:text-sm"
             >
               Sign In
             </Link>
@@ -30,7 +29,7 @@ export default function Header() {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `rounded-3xl py-1 duration-200 ${isActive ? "bg-clight text-cdark" : "text-clight"} border-0 px-3 hover:text-cpri max-md:rounded-2xl max-md:px-2`
+                  `rounded-3xl py-1 duration-200 ${isActive ? "bg-wlight text-wdark" : "text-clight"} border-0 px-3 hover:text-wpri max-md:rounded-2xl max-md:px-2`
                 }
               >
                 Home
@@ -38,7 +37,7 @@ export default function Header() {
               <NavLink
                 to="/events"
                 className={({ isActive }) =>
-                  `block rounded-3xl py-1 duration-200 ${isActive ? "bg-clight text-cdark" : "text-clight"} px-3 hover:text-cpri max-md:px-2 lg:border-0`
+                  `block rounded-3xl py-1 duration-200 ${isActive ? "bg-wlight text-wdark" : "text-clight"} px-3 hover:text-wpri max-md:px-2 lg:border-0`
                 }
               >
                 Events
@@ -46,7 +45,7 @@ export default function Header() {
               <NavLink
                 to="/donate"
                 className={({ isActive }) =>
-                  `block rounded-3xl py-1 duration-200 ${isActive ? "bg-clight text-cdark" : "text-clight"} px-3 hover:text-cpri max-md:px-2 lg:border-0`
+                  `block rounded-3xl py-1 duration-200 ${isActive ? "bg-wlight text-wdark" : "text-clight"} px-3 hover:text-wpri max-md:px-2 lg:border-0`
                 }
               >
                 Donate
@@ -54,7 +53,7 @@ export default function Header() {
               <NavLink
                 to="/alumini"
                 className={({ isActive }) =>
-                  `block rounded-3xl py-1 duration-200 ${isActive ? "bg-clight text-cdark" : "text-clight"} px-3 hover:text-cpri max-md:px-2 lg:border-0`
+                  `block rounded-3xl py-1 duration-200 ${isActive ? "bg-wlight text-wdark" : "text-clight"} px-3 hover:text-wpri max-md:px-2 lg:border-0`
                 }
               >
                 Alumini
@@ -62,7 +61,7 @@ export default function Header() {
               <NavLink
                 to="/jobs"
                 className={({ isActive }) =>
-                  `block rounded-3xl py-1 duration-200 ${isActive ? "bg-clight text-cdark" : "text-clight"} px-3 hover:text-cpri max-md:px-2 lg:border-0`
+                  `block rounded-3xl py-1 duration-200 ${isActive ? "bg-wlight text-wdark" : "text-clight"} px-3 hover:text-wpri max-md:px-2 lg:border-0`
                 }
               >
                 Jobs
