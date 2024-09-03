@@ -3,7 +3,7 @@ import AluminiRelations from "../../assets/Alumini_Relations.svg";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 shadow max-md:w-[450px]">
+    <header id="Header" className="sticky top-0 z-50 shadow-lg max-md:w-[450px]">
       <nav className="border-gray-200 bg-wsec px-2 py-2 max-md:py-1">
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
           <Link
@@ -18,8 +18,8 @@ export default function Header() {
           </Link>
           <div className="order-2 flex items-center font-grotesk font-black">
             <Link
-              to="#"
-              className="rounded-lg bg-wpri px-3 py-1 text-xl text-wlight hover:bg-wdark focus:outline-none focus:ring-2 focus:ring-amber-900 max-md:px-2 max-md:text-sm"
+              to="/signin"
+              className="text-wlight rounded-lg bg-wpri px-3 py-1 text-xl hover:bg-wdark hover:text-clight focus:outline-none focus:ring-2 focus:ring-amber-900 max-md:px-2 max-md:text-sm"
             >
               Sign In
             </Link>

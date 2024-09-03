@@ -8,6 +8,9 @@ import {
   Donate,
   Alumini,
   JobPortal,
+  SignIn,
+  SignOut,
+  Otp,
 } from "./components/Index.js";
 import Layout from "./Layout";
 
@@ -16,6 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route path="" element={<Home />} />
+        <Route path="/signin" element={<SignIn />} />
         <Route path="events" element={<Events />} />
         <Route path="donate" element={<Donate />} />
         <Route path="alumini" element={<Alumini />} />
