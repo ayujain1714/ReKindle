@@ -5,8 +5,7 @@ function Nav({ children }) {
     <header className="navbar p-4">
       <div className="flex gap-2">
         {children}
-        {/* <h1 className="text-2xl font-bold">Navbar</h1> */}
-        <ul className="flex flex-row p-10 gap-5 text-base">
+        <ul className="flex flex-row gap-5 p-10 text-base">
           <li>
             <a href="/">Dashboard</a>
           </li>
